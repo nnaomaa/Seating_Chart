@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Seating Chart</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Seating Chart</h1>
+    <label>Student Name: <input type="text" id="nameInput" placeholder="Enter a name"></label>
+    <button onclick="assignMode()">Assign Mode</button>
+    <button onclick="removeMode()">Remove Mode</button>
+    <button onclick="resetMode()">Reset</button>
+    <p id="mode">Mode: Assign (click an empty seat)</p>
+    <p id="stats" style="font-size: 18px; color: green; min-height: 24px;">Assigned Seats: 0 / 16</p>
+    <p id="message" style="font-size: 18px; color:blue; min-height:24px;"></p>
+    <p id="grid"></p>
+</body>
+</html>
